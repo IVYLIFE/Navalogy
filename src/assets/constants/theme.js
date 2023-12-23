@@ -40,8 +40,9 @@ const RADIAL_GRADIENTS = {
         colors : ['#FFDDDD', '#FCFCFC'],
         opacity : [1, 0.08],
     },
-
-
 }
+
+
+export { COLORS, LINEAR_GRADIENTS, RADIAL_GRADIENTS }
 
 
