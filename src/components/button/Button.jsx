@@ -3,11 +3,13 @@ import './button.css'
 
 const button = (props) => {
 
-  const { text, color, bcgColor } = props
+  const { text, color, bcgColor, id, style } = props
 
   return (
-    <button style={{ color : color, backgroundColor : bcgColor }} >
-        {text}
+    <button 
+      id={id}
+      style={{ color : color, backgroundColor : bcgColor, ...style  }} >
+      {text}
     </button>
   )
 }

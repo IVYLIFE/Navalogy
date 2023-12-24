@@ -1,14 +1,17 @@
 import { useState } from 'react'
 import './app.css'
-import { Header } from './components'
+
+import {HomePage, ContactPage, PortfolioPage, MemberPage} from './pages'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      {/* <h1>Navalogy</h1> */}
-      <Header/>
+      <HomePage />
+      {/* <ContactPage /> */}
+      {/* <PortfolioPage /> */}
+      {/* <MemberPage /> */}
     </>
   )
 }
