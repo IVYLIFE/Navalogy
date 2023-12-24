@@ -1,9 +1,14 @@
 import React from 'react'
 import './button.css'
 
-const button = () => {
+const button = (props) => {
+
+  const { text, color, bcgColor } = props
+
   return (
-    <div>button</div>
+    <button style={{ color : color, backgroundColor : bcgColor }} >
+        {text}
+    </button>
   )
 }
 

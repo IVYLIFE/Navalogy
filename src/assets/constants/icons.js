@@ -5,8 +5,8 @@ import heart from '../icons/heart.png'
 
 
 import github from '../icons/github.png'
-import linkedin from '../icons/linkedin.png'
-import profile from '../icons/profile.png'
+import linkedin from '../icons/linkedln.png'
+import person from '../icons/person.png'
 
 
 import logo from '../icons/logo.png'
@@ -32,7 +32,7 @@ const ICONS = {
     heart,
     github,
     linkedin,
-    profile,
+    person,
     logo,
     sun,
     star,

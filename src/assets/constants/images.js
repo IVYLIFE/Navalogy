@@ -8,7 +8,8 @@ import contact_us_1_full from '../images/contact-us-1-full.png'
 import contact_us_2 from '../images/contact-us-2.png'
 import contact_us_2_full from '../images/contact-us-2-full.png'
 
-import grids from '../images/grids.png'
+import grids_small from '../images/grids-small.png'
+import grids_large from '../images/grids-large.png'
 import waves from '../images/waves.png'
 
 import profile_img_rounded from '../images/profile-img-round.png'
@@ -39,7 +40,8 @@ const IMAGES = {
     contact_us_2,
     contact_us_2_full,
 
-    grids,
+    grids_small,
+    grids_large,
     waves,
 
     profile_img_rounded,
