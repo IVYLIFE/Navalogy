@@ -2,13 +2,14 @@ import React from 'react'
 
 const Title = (props) => {
 
-  const { title, subtitle, color1, color2, id, logo } = props
+  const { title, subtitle, color1, color2, id, logo, style } = props
 
   const titleStyles = {
     fontSize: 'clamp(1.7rem, 5vw, 3rem)',
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: '1rem',
+    ...style
   }
 
   const subtitleStyles = {

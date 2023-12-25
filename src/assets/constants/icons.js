@@ -1,6 +1,7 @@
 import arrow from '../icons/arrow.png'
 import bubble from '../icons/bubble.png'
-import chevron from '../icons/chevron.png'
+import chevronFilled from '../icons/chevron-filled.png'
+import chevronUnFilled from '../icons/chevron-unfilled.png'
 import heart from '../icons/heart.png'
 
 
@@ -28,7 +29,8 @@ import wave from '../icons/wave.png'
 const ICONS = {
     arrow,
     bubble,
-    chevron,
+    chevronFilled,
+    chevronUnFilled,
     heart,
     github,
     linkedin,

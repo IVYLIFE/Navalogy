@@ -29,6 +29,11 @@ import project_desc_4 from '../images/project-desc/project-desc-4.png'
 
 import project_1 from '../images/project-1.png'
 
+import about_us_1 from '../gif/about-us-1.gif'
+// import about_us_2 from '../gif/about-us-2.gif'
+import about_us_2 from '../gif/about-us-2.json'
+
+
 
 const IMAGES = {
     hero_1,
@@ -57,7 +62,10 @@ const IMAGES = {
     project_desc_3,
     project_desc_4,
 
-    project_1
+    project_1,
+
+    about_us_1,
+    about_us_2,
 }
 
 

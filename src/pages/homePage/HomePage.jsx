@@ -1,7 +1,9 @@
 import React from 'react'
 import { Button, Header, HeroImageContainer } from '../../components'
+import { AboutUsSection, PortfolioSection, PublicationSection } from '../../views'
 
 const HomePage = () => {
+
   return (
     <>
 
@@ -28,6 +30,11 @@ const HomePage = () => {
       </div>
 
       <HeroImageContainer/>
+      <AboutUsSection/>
+      <PublicationSection/>
+      <PortfolioSection/>
+
+      
 
     </>
   )

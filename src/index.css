@@ -33,6 +33,20 @@
     --color-slider3: #A68676;
     --color-slider4: #4E684B;
     --color-slider5: #0076B2;
+
+    /* breakpoints */
+    --smallMobile: 480px;
+    --mobile: 768px;
+    --tablet: 950px;
+    --desktop: 1200px;
+
+
+    /* primary : {
+        colors : ['#F3D6E0', '#7363FD'],
+        opacity : [1, 0],
+    } */
+
+    --primary-linear-gradient: linear-gradient(90deg, #F3D6E0 0%, #7363FD 100%);
 }
 
 *{
@@ -52,6 +66,9 @@ body {
     min-width: 320px;
     min-height: 100vh;
     border: 1px dotted red;
+
+    overflow-x: hidden;
+
     /* max-width: 94vw; */
     /* margin: 0 auto; */
 }

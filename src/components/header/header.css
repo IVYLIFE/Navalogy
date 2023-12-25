@@ -71,14 +71,14 @@
 
 .grid{
     position: absolute;
-    top: 15px;
+    top: -30px;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
     margin: 0 auto;
     z-index: -1;
-    transform: scale(1.1);
+    transform: scale(.9);
 }
 
 .grid2{
@@ -92,7 +92,7 @@
 
 @media screen and (max-width: 1200px) {
     .grid2{
-        transform: scale(1.1) translateY(30.2%);
+        transform: scale(.9)  translateY(30.2%);
     }
 }
 
@@ -111,12 +111,12 @@
     }
 
     .grid{
-        top: 30px;
-        transform: scale(1.5);
+        top: 0px;
+        transform: scale(1);
     }
 
     .grid2{
-        transform: scale(1.5) translateY(30.2%);
+        transform: scale(1) translateY(30.2%);
     }
 }
 
@@ -138,7 +138,7 @@
     }
     
     .grid2{
-        transform: scale(1.5) translateY(60.5%);
+        transform: scale(1) translateY(75%);
     }
 }
 
@@ -152,12 +152,16 @@
         font-size: 2rem;
     }
 
+    .grid{
+        transform: scale(1.2);
+    }
+
     .grid2{
-        transform: scale(1.5) translateY(90.5%);
+        transform: scale(1.2) translateY(90.5%);
     }
 
     .grid3{
-        transform: scale(1.5) translateY(151%);
+        transform: scale(1.2) translateY(166%);
     }    
 }
 
