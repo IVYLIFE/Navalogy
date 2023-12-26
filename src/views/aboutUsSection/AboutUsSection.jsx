@@ -7,6 +7,7 @@ import "./aboutUsSection.css";
 const AboutUsSection = () => {
   return (
     <div id="aboutUsSection">
+      
       <div className="left">
         <div className="heading">
           <span>We</span>

@@ -1,11 +1,12 @@
 import { ICONS } from "../../assets"
-import { Header } from "../../components"
+import { HeroTitle } from "../../components"
 
 
 const PortfolioPage = () => {
   return (
-    <div>
-        <Header
+    <div id="portfolioHeroTitle">
+
+        <HeroTitle
             logo = {ICONS.star}
             subtitle = "Navigating Computing Frontiers: A Comprehensive Portfolio of Our Varied Ventures." 
             color1="var(--dark)"

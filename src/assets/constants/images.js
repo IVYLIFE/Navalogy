@@ -10,7 +10,9 @@ import contact_us_2_full from '../images/contact-us-2-full.png'
 
 import grids_small from '../images/grids-small.png'
 import grids_large from '../images/grids-large.png'
-import waves from '../images/waves.png'
+import wave_1 from '../images/wave-1.png'
+import wave_2 from '../images/wave-2.png'
+import wave_3 from '../images/wave-3.png'
 
 import profile_img_rounded from '../images/profile-img-round.png'
 import profile_img from '../images/profile-img.png'
@@ -47,7 +49,9 @@ const IMAGES = {
 
     grids_small,
     grids_large,
-    waves,
+    wave_1,
+    wave_2,
+    wave_3,
 
     profile_img_rounded,
     profile_img,

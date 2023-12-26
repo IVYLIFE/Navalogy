@@ -1,40 +1,36 @@
-import React from 'react'
-import { Button, Header, HeroImageContainer } from '../../components'
+import { Button, HeroImageContainer, HeroTitle } from '../../components'
 import { AboutUsSection, PortfolioSection, PublicationSection } from '../../views'
+import { Link } from 'react-router-dom'
 
 const HomePage = () => {
 
   return (
     <>
 
-      <div>
-
-        <Header
-          subtitle="We design and develop websites and apps that people love to use." 
-          color1="var(--primary)" 
+      <div id='homeHeroTitle'>
+        <HeroTitle
+          color1="var(--primary)"
           color2="var(--dark)"
-          title={{ 
-            emphasize: 'Empowering tomorrow, ', 
-            remaining: 'Innovating today Pioneering the Future of Connectivity' 
-          }} 
+          subtitle="We design and develop websites and apps that people love to use."
+          title={{
+            emphasize: 'Empowering tomorrow, ',
+            remaining: 'Innovating today Pioneering the Future of Connectivity'
+          }}
         />
 
-        <Button 
-          id = "ctaBtn-2" 
-          text = "Dive Deeper" 
-          color =  "var(--light)" 
-          bcgColor = "var(--dark)"
-          style = {{ display: 'block', margin: '0 auto' }}
-        />
+        <Link to = "#" className="center" >
+          <Button
+            text="Dive Deeper"
+          />
+        </Link>
+
 
       </div>
 
-      <HeroImageContainer/>
-      <AboutUsSection/>
-      <PublicationSection/>
+      <HeroImageContainer />
+      <AboutUsSection />
+      <PublicationSection />
       <PortfolioSection/>
-
-      
 
     </>
   )

@@ -1,8 +1,6 @@
 import React from 'react'
 
-const Title = (props) => {
-
-  const { title, subtitle, color1, color2, id, logo, style } = props
+const Title = ({title, subtitle, color1, color2, id, logo, style}) => {
 
   const titleStyles = {
     fontSize: 'clamp(1.7rem, 5vw, 3rem)',
@@ -30,6 +28,7 @@ const Title = (props) => {
   const logoStyles = {
     display: 'block',
     margin: '0 auto 1rem',
+    width: 'clamp(3rem, 10vw, 5rem)',
   }
 
 

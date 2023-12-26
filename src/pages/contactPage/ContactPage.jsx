@@ -1,21 +1,20 @@
 import { ICONS } from "../../assets"
-import { Header } from "../../components"
+import { HeroTitle } from "../../components"
 
 
 const ContactPage = () => {
   return (
-    <div>
-        <Header
+    <div id="contactHeroTitle" >
+        <HeroTitle
             logo = {ICONS.wave}
-            subtitle = "Let us know how we can help." 
             color1="var(--dark)"
             color2="var(--primary)" 
+            subtitle = "Let us know how we can help." 
             title = {{ 
-                  emphasize: 'Friendly Team. ', 
-                  remaining: 'Contact our ' 
+                emphasize: 'Friendly Team. ', 
+                remaining: 'Contact our ' 
             }} 
         />
-
     </div>
     )
 }

@@ -47,6 +47,9 @@
     } */
 
     --primary-linear-gradient: linear-gradient(90deg, #F3D6E0 0%, #7363FD 100%);
+    --button-gradient :linear-gradient(137deg, #F3D6E0 18.74%, rgba(115, 99, 253) 138.5%);
+
+
 }
 
 *{
@@ -59,6 +62,12 @@
 a {
     font-weight: 500;
     text-decoration: inherit;
+}
+
+.center{
+    display: block;
+    width: fit-content;
+    margin: 1rem auto
 }
 
 
@@ -82,11 +91,9 @@ button {
     width: fit-content;
     border-radius: 6px;
     border: 1px solid transparent;
-    /* padding: 0.5rem 1.3rem; */
-    /* font-size: .9rem; */
-    font-size: clamp(.8rem, 1.5vw, .9rem);
-    padding-top: clamp(.3rem, 1.5vw, .5rem);
-    padding-bottom: clamp(.3rem, 1.5vw, .5rem);
+    font-size: clamp(.8rem, 1.5vw, 1.2rem);
+    padding-top: clamp(.3rem, 1.5vw, .8rem);
+    padding-bottom: clamp(.3rem, 1.5vw, .8rem);
     padding-left: clamp(.8rem, 1.5vw, 1.3rem);
     padding-right: clamp(.8rem, 1.5vw, 1.3rem);
 

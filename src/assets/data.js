@@ -1,4 +1,5 @@
 import { ICONS } from "./constants/icons";
+import { IMAGES } from "./constants/images";
 
 const publications = [
 
@@ -55,4 +56,155 @@ const publications = [
 
 ];
 
-export { publications };
+
+
+const projects = [
+
+    {
+        id: 1,
+        type : "Hardware",
+        title: `Smart MediGlove`,
+        image: IMAGES.project_1,
+        short_description: `The Smart Medi-Glove is an innovative Internet of Things (IoT) project designed to revolutionize the healthcare industry, 
+        specifically in the field of medical examinations and diagnostics.This advanced medical glove seamlessly integrates cutting-edge 
+        hardware technology to providereal-time data and insights, enhancing the efficiency and accuracy of medical procedures.`,
+
+        long_description : [
+            {
+                title : "Biometric Sensing",
+                desc : `Embedded sensors in the glove monitor vital signs such as heart rate, temperature, and blood pressure, providing instant health assessments during patient examinations.`,
+                img : IMAGES.project_desc_1,
+            },
+
+            {
+                title : "Wireless Connectivity",
+                desc : `Integrated gesture recognition technology allows for intuitive and hands-free control of connected devices and medical equipment, enhancing the overall user experience for healthcare professionals.`,
+                img : IMAGES.project_desc_2,
+            },
+
+            {
+                title : "Biometric Sensing",
+                desc : `Embedded sensors in the glove 
+                monitor vital signs such as heart rate, temperature, and blood pressure, providing instant health assessments during patient examinations.`,
+                img : IMAGES.project_desc_3,
+            },
+
+            {
+                title : "Gesture Recognition ",
+                desc : `Integrated gesture recognition technology allows for intuitive and hands-free control of connected devices and medical equipment, enhancing the overall user experience for healthcare professionals.`,
+                img : IMAGES.project_desc_4,
+            },
+        ],
+    },
+
+    {
+        id: 2,
+        type: "Cloud/Fog",
+        title: `Smart Cloud Hub`,
+        image: IMAGES.project_1,
+        short_description: `The Smart Cloud Hub is a groundbreaking project that leverages cloud and fog computing to enhance data processing and storage capabilities. 
+        This innovative solution ensures seamless connectivity, real-time data analysis, and efficient resource management for diverse applications.`,
+    
+        long_description: [
+            {
+                title: "Cloud Computing",
+                desc: `Utilizing advanced cloud computing technologies, the Smart Cloud Hub offers scalable and on-demand resources, enabling robust data storage and processing.`,
+                img: IMAGES.project_desc_1,
+            },
+    
+            {
+                title: "Fog Computing",
+                desc: `Incorporating fog computing at the edge, this project minimizes latency and optimizes data processing by distributing computing tasks closer to the data source.`,
+                img: IMAGES.project_desc_2,
+            },
+    
+            {
+                title: "Security Measures",
+                desc: `To ensure data integrity and confidentiality, the Smart Cloud Hub implements state-of-the-art security measures, making it a reliable solution for sensitive applications.`,
+                img: IMAGES.project_desc_3,
+            },
+    
+            {
+                title: "Scalability and Flexibility",
+                desc: `Designed for scalability and flexibility, the Smart Cloud Hub adapts to varying workloads and application demands, providing a versatile cloud and fog computing solution.`,
+                img: IMAGES.project_desc_4,
+            },
+        ],
+    },
+
+    {
+        id: 3,
+        type: "SDN",
+        title: `Dynamic Network Orchestrator`,
+        image: IMAGES.project_1,
+        short_description: `The Dynamic Network Orchestrator is a Software-Defined Networking (SDN) solution that redefines network management. 
+        This project introduces flexibility, automation, and centralized control, revolutionizing the way networks are configured and operated.`,
+    
+        long_description: [
+            {
+                title: "Centralized Control",
+                desc: `With SDN principles, the Dynamic Network Orchestrator centralizes control, allowing administrators to dynamically manage network resources and traffic flow.`,
+                img: IMAGES.project_desc_1,
+            },
+    
+            {
+                title: "Automated Configuration",
+                desc: `Automation plays a key role in this project, enabling automatic configuration and optimization of network components, leading to improved efficiency.`,
+                img: IMAGES.project_desc_2,
+            },
+    
+            {
+                title: "Adaptive Routing",
+                desc: `Implementing adaptive routing algorithms, this SDN solution intelligently adapts to changing network conditions, ensuring optimal performance and resource utilization.`,
+                img: IMAGES.project_desc_3,
+            },
+    
+            {
+                title: "Advanced Traffic Analysis",
+                desc: `The Dynamic Network Orchestrator includes advanced traffic analysis tools, providing insights into network behavior and facilitating informed decision-making.`,
+                img: IMAGES.project_desc_4,
+            },
+        ],
+    },
+
+    {
+        id: 4,
+        type: "Hardware",
+        title: `Smart Wearable Health Monitor`,
+        image: IMAGES.project_1,
+        short_description: `The Smart Wearable Health Monitor is an advanced hardware project designed to provide real-time health tracking and monitoring. 
+        This wearable device seamlessly integrates sensors and connectivity to empower users with insights into their well-being.`,
+    
+        long_description: [
+            {
+                title: "Health Tracking",
+                desc: `Equipped with a variety of sensors, the Smart Wearable Health Monitor tracks vital signs, physical activity, and sleep patterns, promoting a holistic approach to health monitoring.`,
+                img: IMAGES.project_desc_1,
+            },
+    
+            {
+                title: "Wireless Connectivity",
+                desc: `With wireless connectivity features, users can sync and view their health data on mobile devices, fostering proactive health management and timely interventions.`,
+                img: IMAGES.project_desc_2,
+            },
+    
+            {
+                title: "User-Friendly Interface",
+                desc: `The device boasts a user-friendly interface, making it easy for individuals to access and interpret their health data, encouraging a more informed and healthier lifestyle.`,
+                img: IMAGES.project_desc_3,
+            },
+    
+            {
+                title: "Long Battery Life",
+                desc: `Designed for extended use, the Smart Wearable Health Monitor features a long-lasting battery, ensuring continuous health monitoring without frequent recharging.`,
+                img: IMAGES.project_desc_4,
+            },
+        ],
+    }
+];
+
+
+
+
+
+export { publications, projects };

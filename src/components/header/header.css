@@ -1,10 +1,14 @@
 #header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 90vw;
-    margin: 0 auto 5rem ;
-    padding: .5rem;
+    max-width: 95vw;
+    padding: 1.5rem;
+    z-index: 100;
 }
 
 #logoContainer{
@@ -38,7 +42,7 @@
 
 #navLinks a{
     font-weight: 700;
-    font-size: clamp(1rem, 1.5vw, 1.1rem);
+    font-size: clamp(1.1rem, 1.5vw, 1.2rem);
     color: var(--dark);
     transition: all 0.25s;  ;
 }
@@ -52,45 +56,24 @@
 }
 
 #header .btnContainer{
-    width: 12%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-#title{
-    max-width: 950px;
-    padding: 0 1rem;
-    margin: 0 auto;
-}
 
-.grids{
-    width: 90%;
-    margin: 0 auto;
-}
-
-.grid{
-    position: absolute;
-    top: -30px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    margin: 0 auto;
-    z-index: -1;
-    transform: scale(.9);
-}
-
-.grid2{
-    z-index: -2;
-}
-
-.grid3{
-    z-index: -3;
-}
 
 
 @media screen and (max-width: 1200px) {
+    #header{
+        padding: 1rem;
+    }
+
+    #navLinks{
+        width: fit-content;
+        gap: 3rem;
+    }
+
     .grid2{
         transform: scale(.9)  translateY(30.2%);
     }
@@ -102,21 +85,8 @@
         display: none;
     }
 
-    #header{
-        margin-bottom:  3rem;
-    }
-
     #navLinks{
         width: fit-content;
-    }
-
-    .grid{
-        top: 0px;
-        transform: scale(1);
-    }
-
-    .grid2{
-        transform: scale(1) translateY(30.2%);
     }
 }
 
@@ -124,7 +94,6 @@
     #header{
         flex-direction: column;
         gap: 1rem;
-        margin-bottom:  2rem;
     }
 
     #logoContainer{
@@ -135,10 +104,6 @@
     #navLinks{
         margin: 1rem;
         gap: 2rem;    
-    }
-    
-    .grid2{
-        transform: scale(1) translateY(75%);
     }
 }
 
@@ -151,17 +116,5 @@
     #logoText{
         font-size: 2rem;
     }
-
-    .grid{
-        transform: scale(1.2);
-    }
-
-    .grid2{
-        transform: scale(1.2) translateY(90.5%);
-    }
-
-    .grid3{
-        transform: scale(1.2) translateY(166%);
-    }    
 }
 

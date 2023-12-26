@@ -1,21 +1,20 @@
 import { ICONS } from "../../assets"
-import { Header } from "../../components"
+import { HeroTitle } from "../../components"
 
 
 const MemberPage = () => {
   return (
-    <div>
-        <Header
+    <div id="memberHeroTitle" >
+        <HeroTitle
             logo = {ICONS.triangles}
-            subtitle = "We design and develop websites and apps that people love to use." 
             color1="var(--dark)"
             color2="var(--primary)" 
+            subtitle = "We design and develop websites and apps that people love to use." 
             title = {{ 
                     emphasize: 'Our ', 
                     remaining: 'Members' 
-            }} 
+            }}
         />
-
     </div>
     )
 }

@@ -1,18 +1,31 @@
-import { useState } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Layout from './Layout'
+import {
+  HomePage, 
+  ContactPage, 
+  PortfolioPage, 
+  MemberPage,
+  ErrorPage,
+} from './pages'
+
 import './app.css'
 
-import {HomePage, ContactPage, PortfolioPage, MemberPage} from './pages'
-
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <HomePage />
-      {/* <ContactPage /> */}
-      {/* <PortfolioPage /> */}
-      {/* <MemberPage /> */}
-    </>
+
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/team" element={<MemberPage />} />
+          <Route path="*" element={<ErrorPage />} />          
+        </Route>
+        
+      </Routes>
+    </BrowserRouter>
   )
 }
 
