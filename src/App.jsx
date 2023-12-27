@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Layout from './Layout'
 import {
-  HomePage, 
-  ContactPage, 
-  PortfolioPage, 
+  HomePage,
+  ContactPage,
+  PortfolioPage,
   MemberPage,
   ErrorPage,
 } from './pages'
@@ -21,9 +21,9 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/team" element={<MemberPage />} />
-          <Route path="*" element={<ErrorPage />} />          
+          <Route path="*" element={<ErrorPage />} />
         </Route>
-        
+
       </Routes>
     </BrowserRouter>
   )

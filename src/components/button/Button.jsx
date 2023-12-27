@@ -1,7 +1,7 @@
 import React from "react";
 import "./button.css";
 
-const Button = ({ text, type }) => {
+const Button = ({ text, type, onClick }) => {
   type = type || "darkFilled";
   const small = {
     padding: "0.5rem 1rem",
@@ -37,7 +37,7 @@ const Button = ({ text, type }) => {
     ...styles[type],
   };
 
-  return <button style={{ ...genericStyles }}>{text}</button>;
+  return <button onClick={onClick} style={{ ...genericStyles }}>{text}</button>;
 };
 
 export default Button;

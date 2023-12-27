@@ -62,37 +62,35 @@ const projects = [
 
     {
         id: 1,
-        type : "Hardware",
-        title: `Smart MediGlove`,
+        type: "SDN",
+        title: `Dynamic Network Orchestrator`,
         image: IMAGES.project_1,
-        short_description: `The Smart Medi-Glove is an innovative Internet of Things (IoT) project designed to revolutionize the healthcare industry, 
-        specifically in the field of medical examinations and diagnostics.This advanced medical glove seamlessly integrates cutting-edge 
-        hardware technology to providereal-time data and insights, enhancing the efficiency and accuracy of medical procedures.`,
-
-        long_description : [
+        short_description: `The Dynamic Network Orchestrator is a Software-Defined Networking (SDN) solution that redefines network management. 
+        This project introduces flexibility, automation, and centralized control, revolutionizing the way networks are configured and operated.`,
+    
+        long_description: [
             {
-                title : "Biometric Sensing",
-                desc : `Embedded sensors in the glove monitor vital signs such as heart rate, temperature, and blood pressure, providing instant health assessments during patient examinations.`,
-                img : IMAGES.project_desc_1,
+                title: "Centralized Control",
+                desc: `With SDN principles, the Dynamic Network Orchestrator centralizes control, allowing administrators to dynamically manage network resources and traffic flow.`,
+                img: IMAGES.project_desc_1,
             },
-
+    
             {
-                title : "Wireless Connectivity",
-                desc : `Integrated gesture recognition technology allows for intuitive and hands-free control of connected devices and medical equipment, enhancing the overall user experience for healthcare professionals.`,
-                img : IMAGES.project_desc_2,
+                title: "Automated Configuration",
+                desc: `Automation plays a key role in this project, enabling automatic configuration and optimization of network components, leading to improved efficiency.`,
+                img: IMAGES.project_desc_2,
             },
-
+    
             {
-                title : "Biometric Sensing",
-                desc : `Embedded sensors in the glove 
-                monitor vital signs such as heart rate, temperature, and blood pressure, providing instant health assessments during patient examinations.`,
-                img : IMAGES.project_desc_3,
+                title: "Adaptive Routing",
+                desc: `Implementing adaptive routing algorithms, this SDN solution intelligently adapts to changing network conditions, ensuring optimal performance and resource utilization.`,
+                img: IMAGES.project_desc_3,
             },
-
+    
             {
-                title : "Gesture Recognition ",
-                desc : `Integrated gesture recognition technology allows for intuitive and hands-free control of connected devices and medical equipment, enhancing the overall user experience for healthcare professionals.`,
-                img : IMAGES.project_desc_4,
+                title: "Advanced Traffic Analysis",
+                desc: `The Dynamic Network Orchestrator includes advanced traffic analysis tools, providing insights into network behavior and facilitating informed decision-making.`,
+                img: IMAGES.project_desc_4,
             },
         ],
     },
@@ -134,41 +132,6 @@ const projects = [
 
     {
         id: 3,
-        type: "SDN",
-        title: `Dynamic Network Orchestrator`,
-        image: IMAGES.project_1,
-        short_description: `The Dynamic Network Orchestrator is a Software-Defined Networking (SDN) solution that redefines network management. 
-        This project introduces flexibility, automation, and centralized control, revolutionizing the way networks are configured and operated.`,
-    
-        long_description: [
-            {
-                title: "Centralized Control",
-                desc: `With SDN principles, the Dynamic Network Orchestrator centralizes control, allowing administrators to dynamically manage network resources and traffic flow.`,
-                img: IMAGES.project_desc_1,
-            },
-    
-            {
-                title: "Automated Configuration",
-                desc: `Automation plays a key role in this project, enabling automatic configuration and optimization of network components, leading to improved efficiency.`,
-                img: IMAGES.project_desc_2,
-            },
-    
-            {
-                title: "Adaptive Routing",
-                desc: `Implementing adaptive routing algorithms, this SDN solution intelligently adapts to changing network conditions, ensuring optimal performance and resource utilization.`,
-                img: IMAGES.project_desc_3,
-            },
-    
-            {
-                title: "Advanced Traffic Analysis",
-                desc: `The Dynamic Network Orchestrator includes advanced traffic analysis tools, providing insights into network behavior and facilitating informed decision-making.`,
-                img: IMAGES.project_desc_4,
-            },
-        ],
-    },
-
-    {
-        id: 4,
         type: "Hardware",
         title: `Smart Wearable Health Monitor`,
         image: IMAGES.project_1,
@@ -200,7 +163,44 @@ const projects = [
                 img: IMAGES.project_desc_4,
             },
         ],
-    }
+    },
+
+    {
+        id: 4,
+        type : "Hardware",
+        title: `Smart MediGlove`,
+        image: IMAGES.project_1,
+        short_description: `The Smart Medi-Glove is an innovative Internet of Things (IoT) project designed to revolutionize the healthcare industry, 
+        specifically in the field of medical examinations and diagnostics.This advanced medical glove seamlessly integrates cutting-edge 
+        hardware technology to providereal-time data and insights, enhancing the efficiency and accuracy of medical procedures.`,
+
+        long_description : [
+            {
+                title : "Biometric Sensing",
+                desc : `Embedded sensors in the glove monitor vital signs such as heart rate, temperature, and blood pressure, providing instant health assessments during patient examinations.`,
+                img : IMAGES.project_desc_1,
+            },
+
+            {
+                title : "Wireless Connectivity",
+                desc : `Integrated gesture recognition technology allows for intuitive and hands-free control of connected devices and medical equipment, enhancing the overall user experience for healthcare professionals.`,
+                img : IMAGES.project_desc_2,
+            },
+
+            {
+                title : "Biometric Sensing",
+                desc : `Embedded sensors in the glove 
+                monitor vital signs such as heart rate, temperature, and blood pressure, providing instant health assessments during patient examinations.`,
+                img : IMAGES.project_desc_3,
+            },
+
+            {
+                title : "Gesture Recognition ",
+                desc : `Integrated gesture recognition technology allows for intuitive and hands-free control of connected devices and medical equipment, enhancing the overall user experience for healthcare professionals.`,
+                img : IMAGES.project_desc_4,
+            },
+        ],
+    },
 ];
 
 
