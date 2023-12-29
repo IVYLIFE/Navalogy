@@ -11,7 +11,7 @@ const Title = ({title, subtitle, color1, color2, id, logo, style}) => {
   }
 
   const subtitleStyles = {
-    fontSize: 'clamp(.7rem, 3vw, 1.3rem)',
+    fontSize: 'clamp(1rem, 3vw, 1.3rem)',
     textAlign: 'center',
     margin: '2rem 0'
   }

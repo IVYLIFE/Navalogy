@@ -15,9 +15,9 @@ const Header = () => {
         </Link>
 
         <div id="navLinks">
-            <NavLink to="/portfolio" className="navLink" activeClassName="active" exact={true} >Portfolio</NavLink>
-            <NavLink to="/team" className="navLink" activeClassName="active" exact={true} >Team</NavLink>
-            <NavLink to="/contact" className="navLink" activeClassName="active" exact={true} >Contact</NavLink>
+            <NavLink to="/portfolio" className="navLink" activeclassname="active" exact = 'true' >Portfolio</NavLink>
+            <NavLink to="/team" className="navLink" activeclassname="active" exact = 'true' >Team</NavLink>
+            <NavLink to="/contact" className="navLink" activeclassname="active" exact = 'true' >Contact</NavLink>
         </div>
 
         <div className="btnContainer">

@@ -1,36 +1,116 @@
-import React from 'react'
-import Glare from '../ui/glare/Glare'
-import Button from '../button/Button'
+import { useState, useEffect, useCallback } from 'react';
+import { ICONS } from '../../assets';
+import { projects } from '../../assets/data';
+import { Button, Glare } from '../index';
+import { Link } from 'react-router-dom';
 
-const Project = ({ title, description, projectImg }) => {
+import './project.css';
+
+const Project = ({ setProject, project, page }) => {
+
+    const [selectedButton, setSelectedButton] = useState('All');
+
+    useEffect(() => {
+        if (page === 'portfolioPage') {
+            console.log(page);
+            setSelectedButton(() => {
+                console.log(project.type);
+                return project.type;
+            });
+        }
+    }, []);
+
+    console.log(selectedButton)
+
+    // Handle button click to filter projects
+    const handleButtonClick = useCallback((projectType) => {
+        setSelectedButton(projectType);
+        showProjects(projectType);
+    }, []);
+
+
+    // Change project when clicking on the next or previous button
+    const changeProject = useCallback((e) => {
+        const { name } = e.target;
+        let id = project['id'];
+
+        if (name === 'prev') {
+            console.log('prev ');
+            id = (id - 1) % Object.keys(projects).length;
+        } else {
+            console.log('next');
+            id = (id + 1) % Object.keys(projects).length;
+        }
+
+        animation();
+        setProject(projects[id])
+        setSelectedButton(project.type);
+        console.log(project);
+    }, [project]);
+
+
+    // Animation for the project image
+    const animation = () => {
+        console.log('animation');
+        const projectImg = document.querySelector('.projectImg');
+
+        projectImg.style.scale = '0';
+
+        setTimeout(() => {
+            projectImg.style.scale = '1';
+        }, 200);
+    }
+
+    // Filter projects based on the selected button
+    const showProjects = (type) => {
+
+        if (type === 'All') {
+            setProject(projects[0]);
+            return;
+        }
+
+        const filteredProjects = {};
+        Object.keys(projects).forEach(key => {
+            projects[key].type === type ? filteredProjects[key] = projects[key] : null;
+        });
+        console.log(filteredProjects);
+
+        const selectedProject = filteredProjects[Object.keys(filteredProjects)[0]];
+        setProject(selectedProject);
+    };
+
+    // Destructure project data
+    const title = project?.title;
+    const description = project?.short_description;
+    const projectImg = project?.image;
+
     return (
-        <div id="content">
+        <div id='project'>
 
             <div id="btnContainer">
                 <Button
                     text="All"
-                    type={selectedButton === 'All' ? 'gradientFilled' : 'blueFilled'}
+                    type={selectedButton === 'All' ? 'gradientFilled' : 'primary'}
                     onClick={() => handleButtonClick('All')}
                 />
                 <Button
                     text="SDN"
-                    type={selectedButton === 'SDN' ? 'gradientFilled' : 'blueFilled'}
+                    type={selectedButton === 'SDN' ? 'gradientFilled' : 'primary'}
                     onClick={() => handleButtonClick('SDN')}
                 />
                 <Button
                     text="Cloud/Fog"
-                    type={selectedButton === 'Cloud/Fog' ? 'gradientFilled' : 'blueFilled'}
+                    type={selectedButton === 'Cloud/Fog' ? 'gradientFilled' : 'primary'}
                     onClick={() => handleButtonClick('Cloud/Fog')}
                 />
                 <Button
                     text="Hardware"
-                    type={selectedButton === 'Hardware' ? 'gradientFilled' : 'blueFilled'}
+                    type={selectedButton === 'Hardware' ? 'gradientFilled' : 'primary'}
                     onClick={() => handleButtonClick('Hardware')}
                 />
             </div>
 
-
-            <div id="project" >
+            <div id="content">
 
                 <div className="left">
 
@@ -38,18 +118,17 @@ const Project = ({ title, description, projectImg }) => {
                         <h2>{title}</h2>
                         <p className='text'>{description}</p>
 
-                        <Link
-                            to={{
-                                pathname: '/portfolio',
-                                // Send a random object of letters
-                                
-
-                               
-                            }}
-                            style={{ textDecoration: 'none' }}
-                        >
-                            <Button text='More Info' />
-                        </Link>
+                        { 
+                            page === 'homePage' 
+                            &&
+                            <Link
+                                to={{ pathname: '/portfolio', }}
+                                state={{ project: project }}
+                                style={{ textDecoration: 'none' }}
+                            >
+                                <Button text='More Info' />
+                            </Link>
+                        }
 
                     </div>
 
@@ -65,7 +144,7 @@ const Project = ({ title, description, projectImg }) => {
                             top: 0,
                             left: 0,
                             width: 'clamp(20rem, 40vw, 60rem)',
-                            height: '100%',
+                            height: '70%',
                             transform: 'rotate(-24.784deg)',
                             borderRadius: '80.59419rem',
                             filter: 'blur(40px)',
@@ -86,8 +165,10 @@ const Project = ({ title, description, projectImg }) => {
                 </div>
 
             </div>
+
         </div>
     )
+
 }
 
 export default Project

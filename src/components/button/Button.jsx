@@ -18,7 +18,7 @@ const Button = ({ text, type, onClick }) => {
       background: "var(--dark)",
     },
 
-    blueFilled: {
+    primary: {
       color: "var(--light)",
       background: "var(--primary)",
       ...small,
@@ -29,6 +29,15 @@ const Button = ({ text, type, onClick }) => {
       background: "var(--button-gradient)",
       ...small,
     },
+
+    submit: {
+      color: "var(--light)",
+      background: "var(--primary)",
+      padding: "0.5rem 1rem",
+      fontSize: "1.3rem",
+      width: '200px'
+    },
+
   };
 
   const genericStyles = {

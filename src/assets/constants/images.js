@@ -37,6 +37,36 @@ import about_us_2 from '../gif/about-us-2.json'
 
 
 
+
+import n_medhi from '../images/members/medhi-sir.png'
+import aditya from '../images/members/adittya.png'
+import debangee from '../images/members/debangee.png'
+import dibya from '../images/members/dibya.png'
+import dilwar from '../images/members/dilwar.png'
+import kumarjit from '../images/members/kumarjit.png'
+import kunal from '../images/members/kunal.png'
+import prabhat from '../images/members/prabhat.png'
+import ptirindra from '../images/members/ptirindra.png'
+import rajdeep from '../images/members/rajdeep.png'
+import tridib from '../images/members/tridib.png'
+import vicky from '../images/members/vicky.png'
+
+import member_1 from '../images/members/member-1.png'
+import member_2 from '../images/members/member-2.png'
+import member_3 from '../images/members/member-3.png'
+import member_4 from '../images/members/member-4.png'
+import member_5 from '../images/members/member-5.png'
+import member_6 from '../images/members/member-6.png'
+import member_7 from '../images/members/member-7.png'
+import member_8 from '../images/members/member-8.png'
+import member_9 from '../images/members/member-9.png'
+import member_10 from '../images/members/member-10.png'
+import member_11 from '../images/members/member-11.png'
+import member_12 from '../images/members/member-12.png'
+
+
+
+
 const IMAGES = {
     hero_1,
     hero_2,
@@ -70,6 +100,34 @@ const IMAGES = {
 
     about_us_1,
     about_us_2,
+
+    n_medhi,
+    aditya,
+    debangee,
+    dibya,
+    dilwar,
+    kumarjit,
+    kunal,
+    prabhat,
+    ptirindra,
+    rajdeep,
+    tridib,
+    vicky,
+
+    member_1,
+    member_2,
+    member_3,
+    member_4,
+    member_5,
+    member_6,
+    member_7,
+    member_8,
+    member_9,
+    member_10,
+    member_11,
+    member_12,
+
+    
 }
 
 

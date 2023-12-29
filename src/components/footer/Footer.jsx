@@ -38,10 +38,10 @@ const Footer = () => {
                     </div>
 
                     <div id="footerLinks">
-                        <NavLink to="/" className="navLink" activeClassName="active" exact={true} >Home</NavLink>
-                        <NavLink to="/portfolio" className="navLink" activeClassName="active" exact={true} >Portfolio</NavLink>
-                        <NavLink to="/team" className="navLink" activeClassName="active" exact={true} >Team</NavLink>
-                        <NavLink to="/contact" className="navLink" activeClassName="active" exact={true} >Contact</NavLink>
+                        <NavLink to="/" className="navLink" activeclassname="active" exact='true' >Home</NavLink>
+                        <NavLink to="/portfolio" className="navLink" activeclassname="active" exact='true' >Portfolio</NavLink>
+                        <NavLink to="/team" className="navLink" activeclassname="active" exact='true' >Team</NavLink>
+                        <NavLink to="/contact" className="navLink" activeclassname="active" exact='true' >Contact</NavLink>
                     </div>
                 </div>
 

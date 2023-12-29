@@ -1,13 +1,15 @@
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
 
-import Input from "./input/Input";
 import Button from "./button/Button";
 import Title from "./title/Title";
 import HeroImageContainer from "./heroImageContainer/HeroImageContainer";
 import Publication from "./publication/Publication";
 import HeroTitle from "./heroTitle/HeroTitle"; 
 import Error from "./error/Error";
+
+import Project from "./project/Project";
+import ProjectDesc from "./project/ProjectDesc";
 
 
 import Bubble from "./ui/bubble/Bubble";
@@ -26,13 +28,14 @@ export {
     Header,
     Footer,
     
-    Input, 
     Button, 
     Title, 
     HeroImageContainer, 
     Publication, 
     HeroTitle,
     Error,
+    Project,
+    ProjectDesc,
 
     Bubble, 
     Glare,

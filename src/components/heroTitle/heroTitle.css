@@ -27,6 +27,7 @@
 }
 
 
+
 @media screen and (max-width: 1600px) {
 
     .grid2{
@@ -53,11 +54,15 @@
     }
 
     .grid2{
-        transform: scale(1) translateY(80.2%);
+        transform: scale(1) translateY(90.2%);
     }
 }
 
 @media screen and (max-width: 768px){
+
+    #heroTitleContainer{
+        padding: 13rem 0 2rem 0;
+    }
     
     .grid2{
         transform: scale(1) translateY(90.7%);
@@ -65,5 +70,12 @@
 
     .grid3{
         transform: scale(1) translateY(120.7%);
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .grid4{
+        transform: scale(1) translateY(220.7%);
     }
 }
