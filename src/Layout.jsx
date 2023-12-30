@@ -25,7 +25,6 @@ const Layout = () => {
     width: '100px',
     height: '100px',
     filter : 'blur(50px)',
-    // filter : 'drop-shadow(0px 0px 2px var(--primary))',
     borderRadius: '50%',
     backgroundColor: 'var(--primary)',
     zIndex: '9999',
