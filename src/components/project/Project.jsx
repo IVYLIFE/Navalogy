@@ -20,7 +20,6 @@ const Project = ({ setProject, project, page }) => {
         }
     }, []);
 
-    console.log(selectedButton)
 
     // Handle button click to filter projects
     const handleButtonClick = useCallback((projectType) => {
@@ -51,13 +50,12 @@ const Project = ({ setProject, project, page }) => {
 
     // Animation for the project image
     const animation = () => {
-        console.log('animation');
-        const projectImg = document.querySelector('.projectImg');
+        const projectImgContainer = document.querySelector('.projectImgContainer');
 
-        projectImg.style.scale = '0';
+        projectImgContainer.style.scale = '0';
 
         setTimeout(() => {
-            projectImg.style.scale = '1';
+            projectImgContainer.style.scale = '1';
         }, 200);
     }
 
@@ -136,7 +134,9 @@ const Project = ({ setProject, project, page }) => {
 
                 <div className="right">
 
-                    <img src={projectImg} alt="projectImg" className='projectImg' />
+                    <div className="projectImgContainer">
+                        <img src={projectImg} alt="projectImg" className='projectImg' />
+                    </div>
                     <h2>{title}</h2>
 
                     <Glare

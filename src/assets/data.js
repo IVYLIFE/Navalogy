@@ -64,7 +64,7 @@ const projects = {
         id: 0,
         type: "SDN",
         title: `Dynamic Network Orchestrator`,
-        image: IMAGES.project_1,
+        image: IMAGES.at_ovs,
         short_description: `The Dynamic Network Orchestrator is a Software-Defined Networking (SDN) solution that redefines network management. 
         This project introduces flexibility, automation, and centralized control, revolutionizing the way networks are configured and operated.`,
 
@@ -99,7 +99,7 @@ const projects = {
         id: 1,
         type: "Cloud/Fog",
         title: `Smart Cloud Hub`,
-        image: IMAGES.project_1,
+        image: IMAGES.fog,
         short_description: `The Smart Cloud Hub is a groundbreaking project that leverages cloud and fog computing to enhance data processing and storage capabilities. 
         This innovative solution ensures seamless connectivity, real-time data analysis, and efficient resource management for diverse applications.`,
 
@@ -134,7 +134,7 @@ const projects = {
         id: 2,
         type: "Hardware",
         title: `Smart Wearable Health Monitor`,
-        image: IMAGES.project_1,
+        image: IMAGES.full_glove,
         short_description: `The Smart Wearable Health Monitor is an advanced hardware project designed to provide real-time health tracking and monitoring. 
         This wearable device seamlessly integrates sensors and connectivity to empower users with insights into their well-being.`,
 
@@ -169,7 +169,7 @@ const projects = {
         id: 3,
         type: "Hardware",
         title: `Smart MediGlove`,
-        image: IMAGES.project_1,
+        image: IMAGES.app_iomt,
         short_description: `The Smart Medi-Glove is an innovative Internet of Things (IoT) project designed to revolutionize the healthcare industry, 
         specifically in the field of medical examinations and diagnostics.This advanced medical glove seamlessly integrates cutting-edge 
         hardware technology to providereal-time data and insights, enhancing the efficiency and accuracy of medical procedures.`,
