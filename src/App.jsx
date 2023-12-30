@@ -8,8 +8,6 @@ import {
   ErrorPage,
 } from './pages'
 
-import './app.css'
-
 function App() {
 
   return (
