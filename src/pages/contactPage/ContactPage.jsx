@@ -3,9 +3,7 @@ import { ICONS, IMAGES } from "../../assets"
 import { Button, HeroTitle } from "../../components"
 import './contactPage.css'
 
-// import 'dotenv/config'
-// let url = process.env.REACT_APP_GOOGLE_SCRIPT_URL;
-let url = 'https://script.google.com/macros/s/AKfycbzoNE5Zs1zt7yUX0U3l3GpVUTjLD_WngQnzoun13HcTmKfS220zYJkjvVUTRHiYh1-pPQ/exec';
+let url = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
 
 
 const validate = {
