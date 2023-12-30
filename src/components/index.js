@@ -11,17 +11,12 @@ import Error from "./error/Error";
 import Project from "./project/Project";
 import ProjectDesc from "./project/ProjectDesc";
 
+import Member from "./member/Member";
+
 
 import Bubble from "./ui/bubble/Bubble";
 import Glare from "./ui/glare/Glare";
 
-import { 
-    changeProject,
-    showSDNProjects,
-    shoeCloudProjects,
-    showHardwareProjects,
-    showAllProjects
-} from "./utils/utils";
 
 
 export { 
@@ -39,10 +34,5 @@ export {
 
     Bubble, 
     Glare,
-
-    changeProject,
-    showSDNProjects,
-    shoeCloudProjects,
-    showHardwareProjects,
-    showAllProjects
+    Member,
 };

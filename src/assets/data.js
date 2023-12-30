@@ -216,7 +216,7 @@ const members = {
             role: "Assistant Professor | Tezpur University",
             bio: "Dr. Nabajyoti Medhi is an Assistant Professor at Tezpur University. His research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing.",
             socialLinks: [
-                { linkedln: "https://scholar.google.com/citations?user=Qq6XheAAAAAJ&hl=en" }
+                { url : "https://scholar.google.com/citations?user=Qq6XheAAAAAJ&hl=en", icon : ICONS.linkedln_2 }
             ]
         },
 
@@ -232,19 +232,19 @@ const members = {
             role: "PhD Scholar | Tezpur University | Principal Engineer, Starhub",
             bio: "Priyanka Bardoloi is a Principal Engineer at Starhub, Singapore. She is currently pursuing her PhD in the Department of Computer Science and Engineering, Tezpur University. Her research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing.",
             socialLinks: [
-                { linkedln: "https://scholar.google.com/citations?user=Qq6XheAAAAAJ&hl=en" }
+                { url : "https://scholar.google.com/citations?user=Qq6XheAAAAAJ&hl=en", icon : ICONS.linkedln_2 }
             ]
         },
 
         // Birlang Bargayary
         1: {
             id: 1,
-            img: IMAGES.member_2,
+            img: IMAGES.member_7,
             name: "Birlang Bargayary",
             role: "PhD Scholar | Tezpur University",
             bio: "Birlang Bargayary is a PhD Scholar at Tezpur University. His research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing.",
             socialLinks: [
-                { linkedln: "https://scholar.google.com/citations?user=Qq6XheAAAAAJ&hl=en" }
+                { url : "https://scholar.google.com/citations?user=Qq6XheAAAAAJ&hl=en", icon : ICONS.linkedln_2 }
             ]
         },
 
@@ -261,7 +261,7 @@ const members = {
             role: "PhD Scholar | Tezpur University",
             bio: "Kunal Das, our dynamic team member, serves as an Intern with a distinguished background at IQVIA. Acknowledged for his excellence, he received the award for the Best B.Tech Project of the year 2022 in ECE.",
             socialLinks: [
-                { linkedIn: "https://www.linkedin.com/in/dilwar-barbhuiya" },
+                { url : "https://www.linkedin.com/in/dilwar-barbhuiya", icon : ICONS.linkedln_2 },
             ]
         },
 
@@ -273,7 +273,7 @@ const members = {
             role: "PhD Scholar | IIT Kharagpur | Former Assistant Professor , Siksha O Anusandhan",
             bio: "Kumarjit Ray, a diligent PhD Scholar from IIT Kharagpur, brings a wealth of knowledge to the team. With a background as a former Assistant Professor at Siksha O Anusandhan, Kumarjit is passionate about research and academic exploration.",
             socialLinks: [
-                { linkedln: "https://in.linkedin.com/in/kumarjit1997" }
+                { url : "https://in.linkedin.com/in/kumarjit1997", icon : ICONS.linkedln_2 }
             ]
         },
 
@@ -286,7 +286,7 @@ const members = {
             
             bio: "Kunal Das is a former intern at IQVIA. He is celebrated as the Best Btech Project of year 2022 from the ECE Department of Tezpur University. His research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing.",
             socialLinks: [
-                { linkedln: "https://in.linkedin.com/in/kunal-das-131158185" }
+                { url : "https://in.linkedin.com/in/kunal-das-131158185", icon : ICONS.linkedln_2 }
             ]
         },
 
@@ -298,7 +298,7 @@ const members = {
             role: "MTech CSE | Calcutta University",
             bio: "Rajdeep Ghosh holds an MTech in Computer Science from Calcutta University and is celebrated as the Best Graduate of Tezpur University from the class of 2022. With a passion for excellence, Rajdeep brings a wealth of knowledge to the team.",
             socialLinks: [
-                { linkedln: "https://in.linkedin.com/in/rajdeep-ghosh-301082175" }
+                { url : "https://in.linkedin.com/in/rajdeep-ghosh-301082175", icon : ICONS.linkedln_2 }
             ]
         },
 
@@ -310,7 +310,7 @@ const members = {
             role: "SDE II Velocity",
             bio: "Adittya Dey is a Software Development Engineer II at Velocity, India. He is a former Research Associate at Tezpur University. His research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing. He has been awarded the 3rd highest package in the CSE Department of Tezpur University.",
             socialLinks: [
-                { linkedln: "https://in.linkedin.com/in/adittyadey" }
+                { url : "https://in.linkedin.com/in/adittyadey", icon : ICONS.linkedln_2 }
             ]
         },
 
@@ -325,7 +325,7 @@ const members = {
             role: "B. tech 3rd Year ECE | Tezpur University",
             bio: "Tridib Lochan Dutta is a diligent B.Tech student at Tezpur University. His research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing.",
             socialLinks: [
-                { linkedln: "https://www.linkedin.com/in/debangee-goswami-601577222" },
+                { url : "https://www.linkedin.com/in/debangee-goswami-601577222", icon : ICONS.linkedln_2 },
             ]
         },
 
@@ -337,8 +337,7 @@ const members = {
             role: "B. tech 4th Year CSE | Tezpur University",
             bio: "Vicky Deka is a diligent B.Tech student at Tezpur University. His research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing.",
             socialLinks: [
-                { linkedln: "https://in.linkedin.com/in/pritindra-das" },
-
+                { url : "https://in.linkedin.com/in/pritindra-das", icon : ICONS.linkedln_2 },
             ]
         },
 
@@ -350,7 +349,7 @@ const members = {
             role: "B. tech 4th Year CSE | Tezpur University",
             bio: "Pritindra Das is a diligent B.Tech student at Tezpur University. His research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing.",
             socialLinks: [
-                { linkedln: "https://in.linkedin.com/in/pritindra-das" },
+                { url : "https://in.linkedin.com/in/pritindra-das", icon : ICONS.linkedln_2 },
             ]
         },
     },
@@ -364,7 +363,7 @@ const members = {
             role: "B. tech 4th Year CSE | Tezpur University",
             bio: "Dibyaroop Das is a diligent B.Tech student at Tezpur University. His research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing.",
             socialLinks: [
-                { linkedIn: "https://in.linkedin.com/in/dibyaroop-das-8803a41a4" },
+                { url : "https://in.linkedin.com/in/dibyaroop-das-8803a41a4", icon : ICONS.linkedln_2 },
             ]
         },
 
@@ -375,7 +374,7 @@ const members = {
             role: "B.Tech EE 4th Year | Tezpur University ",
             bio: "Prabhatangshu Phukan is a diligent B.Tech student at Tezpur University. His research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing.",
             socialLinks: [
-                { linkedIn: "https://www.linkedin.com/in/prabhatangshu-phukan" },
+                { url : "https://www.linkedin.com/in/prabhatangshu-phukan", icon : ICONS.linkedln_2 },
             ]
         },
 
@@ -386,7 +385,7 @@ const members = {
             role: "B.Tech EE 4th Year | Tezpur University ",
             bio: "Debangee Goswami is a diligent B.Tech student at Tezpur University. Her research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing.",
             socialLinks: [
-                { linkedln: "https://www.linkedin.com/in/debangee-goswami-601577222" },
+                { url : "https://www.linkedin.com/in/debangee-goswami-601577222", icon : ICONS.linkedln_2 },
             ]
         },
     },

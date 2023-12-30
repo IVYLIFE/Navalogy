@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './error.css'
+import Button from '../button/Button'
 
 const Error = () => {
   return (
@@ -12,7 +13,9 @@ const Error = () => {
             <p>Sorry, we couldn't find the page you're looking for.</p>
 
             <Link to="/" className="btnLink">
-                <button className="btn">Go Home</button>
+                <Button
+                    text="Go Home"
+                />
             </Link>
         </div>
     </div>

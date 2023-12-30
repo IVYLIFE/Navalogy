@@ -11,6 +11,10 @@
     z-index: 100;
 }
 
+.logolink{
+    max-width: 230px;
+}
+
 #logoContainer{
     display: flex;
     align-items: center;
@@ -59,6 +63,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    width: 230px;
 }
 
 
