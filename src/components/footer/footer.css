@@ -4,6 +4,7 @@
     padding: 6rem 0 4rem;
     border-top-right-radius: 2rem;
     border-top-left-radius: 2rem;
+    position: relative;
     z-index: 200;
 }
 
@@ -183,7 +184,7 @@
     .info{
         margin: 4rem 0 0;
         width: 100%;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .info1{

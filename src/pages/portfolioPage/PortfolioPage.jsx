@@ -2,9 +2,8 @@ import { useLocation } from 'react-router-dom';
 import { ICONS, IMAGES } from "../../assets";
 import { HeroTitle, Project, ProjectDesc } from "../../components";
 import { projects } from '../../assets/data';
-
-import './poerfolioPage.css'
 import { useEffect, useState } from 'react';
+import './poerfolioPage.css'
 
 const PortfolioPage = () => {
     const location = useLocation();
@@ -20,8 +19,8 @@ const PortfolioPage = () => {
     }, []);
 
 
-    console.log(location);
-    console.log(project);
+    // console.log(location);
+    // console.log(project);
 
 
     return (

@@ -107,6 +107,7 @@ const MemberPage = () => {
 
                         return (
                             <Member
+                                key={personIndex}
                                 className={`member ${position}`}
                                 name={name}
                                 img={img}

@@ -12,9 +12,9 @@ const Project = ({ setProject, project, page }) => {
 
     useEffect(() => {
         if (page === 'portfolioPage') {
-            console.log(page);
+            // console.log(page);
             setSelectedButton(() => {
-                console.log(project.type);
+                // console.log(project.type);
                 return project.type;
             });
         }
@@ -34,17 +34,14 @@ const Project = ({ setProject, project, page }) => {
         let id = project['id'];
 
         if (name === 'prev') {
-            console.log('prev ');
             id = (id - 1) % Object.keys(projects).length;
         } else {
-            console.log('next');
             id = (id + 1) % Object.keys(projects).length;
         }
 
         animation();
         setProject(projects[id])
         setSelectedButton(project.type);
-        console.log(project);
     }, [project]);
 
 
@@ -71,7 +68,6 @@ const Project = ({ setProject, project, page }) => {
         Object.keys(projects).forEach(key => {
             projects[key].type === type ? filteredProjects[key] = projects[key] : null;
         });
-        console.log(filteredProjects);
 
         const selectedProject = filteredProjects[Object.keys(filteredProjects)[0]];
         setProject(selectedProject);

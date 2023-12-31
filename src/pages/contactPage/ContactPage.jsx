@@ -29,7 +29,6 @@ const validate = {
 
 const changeValue = (value) => {
     let [hours, minutes] = value.split(':');
-    console.log(hours, minutes)
 
     if (hours.length === 1) {
         hours = '0' + hours;
@@ -97,7 +96,6 @@ const ContactPage = () => {
         let submit = true;
 
         console.log(formData)
-        console.log(errors)
 
         Object.keys(formData).forEach((key) => {
             if (formData[key] == '') {
