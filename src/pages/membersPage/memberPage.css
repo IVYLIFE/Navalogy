@@ -146,11 +146,6 @@
   #centerContent {
     width: 90vw;
   }
-  
-  .memberRight{
-    width: fit-content;
-
-  }
 
   #leftChivron,
   #rightChivron {
@@ -160,8 +155,6 @@
   .member {
     width: 85%;
   }
-
-
 }
 
 @media screen and (max-width: 500px) {

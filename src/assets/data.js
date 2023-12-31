@@ -270,7 +270,7 @@ const members = {
             id: 1,
             img: IMAGES.kumarjit,
             name: "Kumarjit Ray",
-            role: "PhD Scholar | IIT Kharagpur | Former Assistant Professor , Siksha O Anusandhan",
+            role: "PhD Scholar | IIT Kharagpur | Former Asst. Prof. Siksha O Anusandhan",
             bio: "Kumarjit Ray, a diligent PhD Scholar from IIT Kharagpur, brings a wealth of knowledge to the team. With a background as a former Assistant Professor at Siksha O Anusandhan, Kumarjit is passionate about research and academic exploration.",
             socialLinks: [
                 { url : "https://in.linkedin.com/in/kumarjit1997", icon : ICONS.linkedln_2 }
@@ -283,7 +283,6 @@ const members = {
             img: IMAGES.kunal,
             name: "Kunal Das",
             role: "Intern | ex-IQVIA",
-            
             bio: "Kunal Das is a former intern at IQVIA. He is celebrated as the Best Btech Project of year 2022 from the ECE Department of Tezpur University. His research interests include Software Defined Networking, Network Function Virtualization, and Cloud Computing.",
             socialLinks: [
                 { url : "https://in.linkedin.com/in/kunal-das-131158185", icon : ICONS.linkedln_2 }
