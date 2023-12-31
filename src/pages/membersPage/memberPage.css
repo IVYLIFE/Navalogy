@@ -145,11 +145,9 @@
 @media screen and (max-width: 660px) {
   #centerContent {
     width: 90vw;
-    border: 1px solid red;
   }
   
   .memberRight{
-    border: 1px solid red;
     width: fit-content;
 
   }
