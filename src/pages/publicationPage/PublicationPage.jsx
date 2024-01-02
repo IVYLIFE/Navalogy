@@ -8,12 +8,19 @@ import './publicationsPage.css'
 
 const PublicationPage = () => {
 
-  const [year, setYear] = useState('2023')
+  const [year, setYear] = useState('All')
   const [currentPublications, setCurrentPublications] = useState(publications)
 
 
 
   const handleButtonClick = (year) => {
+
+    if (year === 'All') {
+      setCurrentPublications(publications)
+      setYear('All')
+      return
+    }
+
     setYear(year)
     let newPublications = []
 
@@ -49,6 +56,11 @@ const PublicationPage = () => {
       <div id="publicationpageContent">
         <div className="btnSelectionContainer yearContainer">
 
+          <Button
+            text="All"
+            type={year === 'All' ? 'gradientFilled' : 'primary'}
+            onClick={() => handleButtonClick('All')}
+          />
           <Button
             text="2023"
             type={year === '2023' ? 'gradientFilled' : 'primary'}
