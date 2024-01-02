@@ -32,7 +32,7 @@ const Layout = () => {
     pointerEvents: 'none',
     width: '100px',
     height: '100px',
-    filter: 'blur(50px)',
+    filter: 'blur(65px)',
     borderRadius: '50%',
     backgroundColor: 'var(--primary)',
     zIndex: '9999',
