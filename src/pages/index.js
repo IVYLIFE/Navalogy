@@ -3,6 +3,7 @@ import HomePage from "./homePage/HomePage";
 import MemberPage from "./membersPage/MemberPage";
 import PortfolioPage from "./portfolioPage/PortfolioPage";
 import ErrorPage from "./errorPage/ErrorPage";
+import PublicationPage from "./publicationPage/PublicationPage";
 
 export { 
     ContactPage, 
@@ -10,5 +11,6 @@ export {
     MemberPage, 
     PortfolioPage,
     ErrorPage, 
+    PublicationPage
 };
 

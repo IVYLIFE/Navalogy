@@ -23,6 +23,15 @@ import icon_1 from '../icons/icon-1.png'
 import icon_2 from '../icons/icon-2.png'
 import icon_3 from '../icons/icon-3.png'
 import icon_4 from '../icons/icon-4.png'
+import icon_5 from '../icons/icon-5.png'
+import icon_6 from '../icons/icon-6.png'
+import icon_7 from '../icons/icon-7.png'
+import icon_8 from '../icons/icon-8.png'
+import icon_9 from '../icons/icon-9.png'
+import icon_10 from '../icons/icon-10.png'
+import icon_11 from '../icons/icon-11.png'
+import icon_12 from '../icons/icon-12.png'
+
 
 
 import planet from '../icons/planet.png'
@@ -45,12 +54,23 @@ const ICONS = {
     sun,
     star,
     triangles,
+    
     icon_1,
     icon_2,
     icon_3,
     icon_4,
+    icon_5,
+    icon_6,
+    icon_7,
+    icon_8,
+    icon_9,
+    icon_10,
+    icon_11,
+    icon_12,
+
+
     planet,
-    wave
+    wave,
 }
 
 export { ICONS }

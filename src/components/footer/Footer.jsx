@@ -15,8 +15,8 @@ const Footer = () => {
 
 
                     {/* create a mailto link  */}
-                    <a href="mailto:navalogy@gmail.com" className="email">
-                        <span>navalogy@gmail.com</span>
+                    <a href="mailto:team.navalogy@gmail.com" className="email">
+                        <span>team.navalogy@gmail.com</span>
                         <img src={ICONS.arrow} />
                     </a>
 
@@ -44,6 +44,7 @@ const Footer = () => {
                         <NavLink to="/portfolio" className="navLink" activeclassname="active" exact='true' >Portfolio</NavLink>
                         <NavLink to="/team" className="navLink" activeclassname="active" exact='true' >Team</NavLink>
                         <NavLink to="/contact" className="navLink" activeclassname="active" exact='true' >Contact</NavLink>
+                        <NavLink to="/publication" className="navLink" activeclassname="active" exact='true' >Publications</NavLink>
                     </div>
                 </div>
 

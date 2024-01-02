@@ -53,7 +53,7 @@ const MemberPage = () => {
                 />
             </div>
 
-            <div id="memberSelectionContainer">
+            <div className="btnSelectionContainer">
 
                 <Button
                     text="Current Scholars"

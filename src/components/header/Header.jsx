@@ -9,8 +9,11 @@ const Header = () => {
     <header id='header' >
         <Link to="/" className="logoLink">
             <div id="logoContainer">
-                <img src= {ICONS.logo} alt="./Navalogy-Logo"  id='mainLogo'/> 
+                <div id="mainLogo">
+                    <img src= {ICONS.logo} alt="./Navalogy-Logo"/> 
+                </div>
                 <h2 id="logoText">Navalogy</h2>  
+                
             </div>
         </Link>
 
@@ -18,6 +21,7 @@ const Header = () => {
             <NavLink to="/portfolio" className="navLink" activeclassname="active" exact = 'true' >Portfolio</NavLink>
             <NavLink to="/team" className="navLink" activeclassname="active" exact = 'true' >Team</NavLink>
             <NavLink to="/contact" className="navLink" activeclassname="active" exact = 'true' >Contact</NavLink>
+            <NavLink to="/publication" className="navLink" activeclassname="active" exact = 'true' >Publications</NavLink>
         </div>
 
         <div className="btnContainer">

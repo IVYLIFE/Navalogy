@@ -38,18 +38,28 @@ import about_us_2 from '../gif/about-us-2.json'
 
 
 
-import n_medhi from '../images/members/medhi-sir.png'
 import aditya from '../images/members/adittya.png'
+import antara from '../images/members/antara.png'
+import arindom from '../images/members/arindom.png'
+import bhargav from '../images/members/bhargav.png'
+import birlang from '../images/members/birlang.png'
+import chandrima from '../images/members/chandrima.png'
 import debangee from '../images/members/debangee.png'
+import deekshith from '../images/members/deekshith.png'
 import dibya from '../images/members/dibya.png'
 import dilwar from '../images/members/dilwar.png'
 import kumarjit from '../images/members/kumarjit.png'
 import kunal from '../images/members/kunal.png'
+import n_medhi from '../images/members/medhi-sir.png'
 import prabhat from '../images/members/prabhat.png'
+import pratik from '../images/members/pratik.png'
 import ptirindra from '../images/members/pritindra.png'
+import priyanka from '../images/members/priyanka.png'
 import rajdeep from '../images/members/rajdeep.png'
+import tanushree from '../images/members/tanushree.png'
 import tridib from '../images/members/tridib.png'
 import vicky from '../images/members/vicky.png'
+
 
 import member_1 from '../images/members/member-1.png'
 import member_2 from '../images/members/member-2.png'
@@ -101,16 +111,25 @@ const IMAGES = {
     about_us_1,
     about_us_2,
 
-    n_medhi,
     aditya,
+    antara,
+    arindom,
+    bhargav,
+    birlang,
+    chandrima,
     debangee,
+    deekshith,
     dibya,
     dilwar,
     kumarjit,
     kunal,
+    n_medhi,
     prabhat,
+    pratik,
     ptirindra,
+    priyanka,
     rajdeep,
+    tanushree,
     tridib,
     vicky,
 
