@@ -30,8 +30,8 @@ const Layout = () => {
   const cursorDivStyle = {
     position: 'absolute',
     pointerEvents: 'none',
-    width: '100px',
-    height: '100px',
+    width: '60px',
+    height: '60px',
     filter: 'blur(65px)',
     borderRadius: '50%',
     backgroundColor: 'var(--primary)',
