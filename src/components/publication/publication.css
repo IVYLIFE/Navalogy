@@ -25,7 +25,7 @@
 }
 
 .publicationIcon{
-    width: 29px;
+    width: 26px;
     height: 26px;
 
 }
@@ -118,10 +118,15 @@
 
     .publicationIcon{
         width: 20px;
-        height: 18px;
+        height: 20px;
     }
 
     .publicationTitle{
+        text-align: center;
+    }
+
+    .publicationSubTitle{
+        flex-direction: column;
         text-align: center;
     }
 
