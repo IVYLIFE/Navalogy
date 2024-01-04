@@ -2,6 +2,8 @@ import { useState } from "react";
 import { ICONS, IMAGES } from "../../assets"
 import { Button, HeroTitle } from "../../components"
 import './contactPage.css'
+import toast, { Toaster } from "react-hot-toast";
+
 
 let url = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
 
@@ -22,7 +24,7 @@ const validate = {
     },
 
     timeToCall: (value) => {
-        const REX = /^([01]?[0-9]|2[0-4]):[0-5][0-9]$/; // This regex checks for a time in 24-hour format
+        const REX = /^([01]?[0-9]|2[0-3])(:[0-5][0-9])?$/; // This regex checks for a time in 24-hour format
         return REX.test(value);
     },
 };
@@ -95,8 +97,6 @@ const ContactPage = () => {
         let message = '';
         let submit = true;
 
-        console.log(formData)
-
         Object.keys(formData).forEach((key) => {
             if (formData[key] == '') {
                 message = 'Please fill out all fields'
@@ -112,35 +112,34 @@ const ContactPage = () => {
         })
 
         if (submit) {
-
             setFormData(prevState => ({
                 ...prevState,
                 'timeToCall': changeValue(formData.timeToCall)
             }));
 
-            url += `?email=${formData.email}&name=${formData.name}&phoneNumber=${formData.phoneNumber}&timeToCall=${formData.timeToCall}`
+            let dataUrl = `?email=${formData.email}&name=${formData.name}&phoneNumber=${formData.phoneNumber}&timeToCall=${formData.timeToCall}`
 
             // reset form data
             setFormData(initialFormData);
             setErrors(initialFormData);
 
-            fetch(url, {
+            fetch(url+dataUrl, {
                 method: 'GET',
-                content: 'application/json'
+                content : 'application/text'
+
             }).then(res => {
-                console.log(res)
                 return res.text()
             }).then(data => {
                 if (data === 'success') {
-                    alert('Message Sent')
+                    toast.success('Message Sent Successfully')
                 } else {
-                    alert('Message Failed to Send')
+                    toast.error('Message Not Sent')
                 }
             }).catch(err => {
-                console.log(err)
+                toast.error(err)
             })
         } else {
-            alert(message)
+            toast.error(message)
         }
     }
 
@@ -266,6 +265,11 @@ const ContactPage = () => {
 
                 </div>
             </div>
+
+            <Toaster
+                position="top-center"
+                reverseOrder={false}
+             />
 
 
 
