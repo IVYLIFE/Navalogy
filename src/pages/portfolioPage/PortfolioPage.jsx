@@ -4,6 +4,7 @@ import { HeroTitle, Project, ProjectDesc } from "../../components";
 import { projects } from '../../assets/data';
 import { useEffect, useState } from 'react';
 import './poerfolioPage.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const PortfolioPage = () => {
     const location = useLocation();
@@ -54,7 +55,7 @@ const PortfolioPage = () => {
 
                     {project.long_description.map((desc, index) => (
                             <div className={`descImage descImage-${index + 1}`} key = {index}>
-                                <img src={desc.img} alt="descImg" />
+                                <LazyLoadImage src={desc.img} alt="descImg" />
                             </div>
                     ))}
                 </div>
@@ -64,10 +65,10 @@ const PortfolioPage = () => {
             </div>
 
             <div id='portfolioGrids'>
-                <img src={IMAGES.grids_large} alt="grid-large" id='grid1' />
-                <img src={IMAGES.grids_large} alt="grid-large" id='grid2' />
-                <img src={IMAGES.grids_large} alt="grid-large" id='grid3' />
-                <img src={IMAGES.grids_large} alt="grid-large" id='grid4' />
+                <LazyLoadImage src={IMAGES.grids_large} alt="grid-large" id='grid1' />
+                <LazyLoadImage src={IMAGES.grids_large} alt="grid-large" id='grid2' />
+                <LazyLoadImage src={IMAGES.grids_large} alt="grid-large" id='grid3' />
+                <LazyLoadImage src={IMAGES.grids_large} alt="grid-large" id='grid4' />
             </div>
         </div>
     )

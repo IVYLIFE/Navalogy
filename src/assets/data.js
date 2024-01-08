@@ -566,9 +566,24 @@ const members = {
             ],
         },
 
-        // Name : Tanushree Das
+        // Name : Tanaya debnath
         11: {
             id: 11,
+            img: IMAGES.tanaya,
+            name: "Tanaya debnath",
+            role: "B.Tech 3rd Year ECE | Tezpur University",
+            bio: "Tanaya Debnath is an inquisitive explorer and skilled Frontend Developer. Proficient in SQL (Oracle MySQL), Tanaya is a collaborative learner with a keen interest in IoT, combining technical expertise with a passion for innovation.",
+            socialLinks: [
+                {
+                    url: "http://www.linkedin.com/in/tanaya-debnath-440436247",
+                    icon: ICONS.linkedln_2,
+                },
+            ],
+        },
+
+        // Name : Tanushree Das
+        12: {
+            id: 12,
             img: IMAGES.tanushree,
             name: "Tanushree Das",
             role: "B.Tech 4th Year CSE | Tezpur University",
@@ -582,8 +597,8 @@ const members = {
         },
 
         // Name : Tridib Lochan Dutta
-        12: {
-            id: 12,
+        13: {
+            id: 13,
             img: IMAGES.tridib,
             name: "Tridib Lochan Dutta",
             role: "B.Tech 3rd Year ECE | Tezpur University",
@@ -594,8 +609,8 @@ const members = {
         },
 
         // Name : Vicky Deka
-        13: {
-            id: 13,
+        14: {
+            id: 14,
             img: IMAGES.vicky,
             name: "Vicky Deka",
             role: "B.Tech 4th Year CSE | Tezpur University",
@@ -606,8 +621,8 @@ const members = {
         },
 
         // Name : Vivek
-        13: {
-            id: 13,
+        15: {
+            id: 15,
             img: IMAGES.vivek,
             name: "Vivek Rai",
             role: "B.Tech 3rd Year CSE | Tezpur University",

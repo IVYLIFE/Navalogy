@@ -1,3 +1,4 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import './member.css'
 
 
@@ -20,12 +21,12 @@ const Member = ({ name, img, bio, role, socialLinks, className }) => {
             {/* <div className={`grayScaleImg ${isVisible ? 'visible' : ''}`}> */}
         
             <div className={`grayScaleImg }`}>
-                <img src={img} alt={name} />
+                <LazyLoadImage src= {img} alt={name} />
             </div>
 
             <div className="capsule down">
                 <div className="memberLeft">
-                    <img src={img} alt={name} />
+                    <LazyLoadImage src={img} alt={name} />
                 </div>
 
                 <div className="memberRight">
