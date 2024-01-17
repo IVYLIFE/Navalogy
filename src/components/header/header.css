@@ -11,7 +11,6 @@
     z-index: 100;
 }
 
-
 #logoContainer {
     max-width: 230px;
     display: flex;
@@ -45,7 +44,6 @@
     gap: clamp(1rem, 10vw, 4rem);
     margin-top: 1rem;
     width: 50%;
-
 }
 
 #navLinks a {
