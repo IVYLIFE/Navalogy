@@ -24,7 +24,6 @@ const PortfolioSection = () => {
         />
 
         <Project setProject={setProject} project= {project} page = 'homePage' />
-
       </div>
 
     </div>

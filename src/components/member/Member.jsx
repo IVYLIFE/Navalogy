@@ -32,7 +32,7 @@ const Member = ({ name, img, bio, role, socialLinks, className }) => {
                 <div className="memberRight">
                     <h3 className='name'>{name}</h3>
                     <p className='role'>{role}</p>
-                    <p className='bio'>{bio.substring(0, 120)}...</p>
+                    <p className='bio'>{bio.substring(0, 180)}...</p>
                     <div className="socialLinks">
                         {socialLinks.map((link, index) => {
                             return (

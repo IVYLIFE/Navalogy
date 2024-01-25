@@ -3,8 +3,8 @@ import { ICONS, IMAGES } from "../../assets";
 import { HeroTitle, Project, ProjectDesc } from "../../components";
 import { projects } from '../../assets/data';
 import { useEffect, useState } from 'react';
-import './poerfolioPage.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import './portfolioPage.css'
 
 const PortfolioPage = () => {
     const location = useLocation();
@@ -15,7 +15,7 @@ const PortfolioPage = () => {
 
     useEffect(() => {
         setProjectLoaded(true);
-        if(location.state?.project)
+        if (location.state?.project)
             setProject(location.state?.project);
     }, []);
 
@@ -46,17 +46,17 @@ const PortfolioPage = () => {
 
                 <div id="projectDescriptions">
                     {project.long_description.map((desc, index) => (
-                            <div className={`desc desc-${index + 1}`} key = {index}>
-                                <h3>{desc.title}</h3>
-                                <p>{desc.desc}</p>
-                            </div>
-                            
+                        <div className={`desc desc-${index + 1}`} key={index}>
+                            <h3>{desc.title}</h3>
+                            <p>{desc.desc}</p>
+                        </div>
+
                     ))}
 
                     {project.long_description.map((desc, index) => (
-                            <div className={`descImage descImage-${index + 1}`} key = {index}>
-                                <LazyLoadImage src={desc.img} alt="descImg" />
-                            </div>
+                        <div className={`descImage descImage-${index + 1}`} key={index}>
+                            <LazyLoadImage src={desc.img} alt="desc-image" />
+                        </div>
                     ))}
                 </div>
 
